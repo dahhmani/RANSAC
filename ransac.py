@@ -1,5 +1,4 @@
 import numpy as np
-import math
 import random
 import csv
 import matplotlib.pyplot as plt
@@ -37,7 +36,7 @@ def polyRansacFit(x_dataset, y_dataset, degree, no_samples, distanceThreshold):
     ''' Robust Estimation (Outlier Rejection Technique) '''
 
     datasetSize = len(y_dataset)
-    min_no_outliers = math.inf
+    min_no_outliers = np.inf
     # visitedSamples = set()
     X_dataset = constructRegressionMatrix(x_dataset, degree) 
 
